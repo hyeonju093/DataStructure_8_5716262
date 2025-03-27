@@ -1,4 +1,5 @@
-/*FUNCTION MatrixAddition()
+/* 의사코드
+FUNCTION MatrixAddition()
 DECLARE matrix1[2][2], matrix2[2][2], result[2][2]
 
 PRINT "첫 번째 2x2 행렬 입력:"
@@ -24,20 +25,21 @@ END FUNCTION
 */
 #include <stdio.h>
 
+//2x2 행렬을 위한 배열 생성
 void MatrixAddition() {
     int matrix1[2][2], matrix2[2][2], result[2][2];
 
     printf("첫 번째 2x2 행렬 입력:\n");
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {
-            scanf_s("%d", &matrix1[i][j]);
+            scanf_s("%d", &matrix1[i][j]);  //입력받은 값을 matrix1에 저장
         }
     }
 
     printf("두 번째 2x2 행렬 입력:\n");
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {
-            scanf_s("%d", &matrix2[i][j]);
+            scanf_s("%d", &matrix2[i][j]);  //입력받은 값을 matrix2에 저장
         }
     }
 
